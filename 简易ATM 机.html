@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        //1.弹出窗口,显示操作, 输入框
+        //2.申明money值; 存钱 ,窗口提示;
+        //3.取钱 ,窗口提示;
+
+        var num = prompt('请输入您要进行的操作:' + '\n' + '1.存钱' + '\n' + '2.取钱' + '\n' + '3.显示余额' + '\n' + '4.退出');
+        var money = 100;
+        switch (num) {
+            case '1':
+                var num1 = prompt('请输入存入的金额:');
+                money = money + parseFloat(num1);
+                alert('您的余额为' + money + '元');
+                break;
+            case '2':
+                var num2 = prompt('请输入要取出的金额:');
+                money = money - num2;
+                alert('您的余额为' + money + '元');
+                break;
+            case '3':
+                alert('您的余额为' + money + '元');
+                break;
+            default:
+                alert('请重新登录');
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

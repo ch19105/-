@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var str = '';
+        // 外层for 打印9行
+        for (var i = 1; i <= 9; i++) {
+            // 内层for 每行打印9个xx
+            for (var j = 1; j <= 9; j++) {
+                str = str + '☆ ';
+            }
+            str = str + '\n';
+        }
+        console.log(str);
+
+
+        // 打印倒三角
+
+        方法1;
+        j = 行数, , 当j = 9 时, 最后一行就打印一个
+        var str = '';
+        // 外层for 打印9行
+        for (var i = 1; i <= 9; i++) {
+            // 内层for 每行打印9个xx
+            for (var j = i; j <= 9; j++) {
+                str = str + '☆ ';
+            }
+            str = str + '\n';
+        }
+        console.log(str);
+
+
+
+        方法2: 10 减去行数i
+        var str = '';
+        // 外层for 打印9行
+        for (var i = 1; i <= 9; i++) {
+            // 内层for 每行打印9个xx
+            for (var j = 1; j <= 10 - i; j++) {
+                str = str + '☆ ';
+            }
+            str = str + '\n';
+        }
+        console.log(str);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
